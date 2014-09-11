@@ -13,6 +13,12 @@ def run_command(command=[]):
     out, err = process.communicate() 
     return [process.returncode,out]
 
+def notify(message):
+    file = open("api.log","w")
+    file.write(message)
+    file.close()		
+
+
 def call(meetingId):
     print("starting to call",meetingId)
     return run_command(["./start.sh -m " + meetingId])
@@ -23,6 +29,7 @@ def stop():
 
 def echo(message):
     print("Server says ",message)
+    notify("Welcome " + message)	
     return [0,message]
 
 class RequestHandler(pyjsonrpc.HttpRequestHandler):
