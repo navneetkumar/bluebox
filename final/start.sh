@@ -14,7 +14,9 @@ done
 echo "Welcome to Bluebox!" 
 echo "Meeting id:" "$mid"
 
-linphonecsh init -C
+echo "" > linphone.log
+
+linphonecsh init -C -l linphone.log -d 6
 
 sleep 2s
 

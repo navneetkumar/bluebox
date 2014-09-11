@@ -27,9 +27,10 @@ class HelloWorld:
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
         self.window.connect("delete_event", self.delete_event)
         self.window.connect("destroy", self.destroy)
-        self.window.set_border_width(50)
+        #self.window.set_border_width(50)
         self.window.set_title("BlueJeans")
-        self.window.maximize()
+        self.window.set_resizable(True)
+        self.window.fullscreen()
 
     def addButton(self):
         self.button = gtk.Button("Enter BlueJeans")
@@ -55,7 +56,9 @@ class HelloWorld:
         self.box1.pack_start(self.meetingPassCodeLabel, True, True, 0)
         self.meetingPassCodeLabel.show()
         self.box1.show()
+        self.window.set_resizable(True)
         self.window.show()
+        self.window.fullscreen()
 
     def destroy(self, widget, data=None):
         print "destroy signal occurred"
