@@ -4,7 +4,7 @@
 import pyjsonrpc
 
 serverAddress="0.0.0.0"
-serverPort=8090
+serverPort=9090
 
 def add(a, b):
     """Test function"""
@@ -23,8 +23,11 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
 
 # Threading HTTP-Server
 def serverStart():
-    http_server = pyjsonrpc.ThreadingHttpServer(server_address = (serverAddress, serverPort),RequestHandlerClass = RequestHandler)
     print("Starting HTTP server ...")
+    try:
+        http_server = pyjsonrpc.ThreadingHttpServer(server_address = (serverAddress, serverPort),RequestHandlerClass = RequestHandler)
+    except Exception:
+        print("Exception")
     print("URL: http://"),serverAddress,(":"),serverPort
     try:
         http_server.serve_forever()

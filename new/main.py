@@ -7,12 +7,15 @@ import gtkUI
 import server
 import threading
 from server import serverStart
-from gtkUI import HelloWorld
+from gtkUI import uiStart
 
 if __name__=='__main__':
-
     serverThread = threading.Thread(target=serverStart, args = ())
     serverThread.daemon = True
+    gtkThread =  threading.Thread(target=uiStart, args = ())
+    gtkThread.daemon = True
+    gtkThread.start()
     serverThread.start()
-    hello = HelloWorld()
-    hello.main()
+
+    serverThread.join()    
+
