@@ -13,9 +13,13 @@ def run_command(command=[]):
     out, err = process.communicate() 
     return [process.returncode,out]
 
-def call(meetingId, passCode):
-    print("starting to call",meetingId,passCode)
-    return run_command(["ls","-l"])
+def call(meetingId):
+    print("starting to call",meetingId)
+    return run_command(["./start.sh -m " + meetingId])
+
+def stop():
+    print("stopping the call")
+    return run_command(["./stop.sh"])
 
 def echo(message):
     print("Server says ",message)
@@ -26,6 +30,7 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
     # Register public JSON-RPC methods
     methods = {
         "call": call,
+	"stop": stop,
         "echo": echo
     }
 
