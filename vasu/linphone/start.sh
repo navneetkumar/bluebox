@@ -11,12 +11,14 @@ while getopts ":m:p:" opt; do
    esac
 done
 
-echo "Hello, Bluebox!" 
+echo "Welcome to Bluebox!" 
 echo "Meeting id:" "$mid"
-echo "Passcode:" "$pcode"
 
 linphonecsh init -C
 
 sleep 0.5s
 
-linphonecsh generic call "sip:90009000@sip.bjn.vc;transport=TLS"
+str="call sip:"$mid"@sip.bjn.vc;transport=TLS"
+echo $str
+
+linphonecsh generic "call sip:"$mid"@sip.bjn.vc;transport=TLS"

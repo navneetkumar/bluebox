@@ -6,19 +6,20 @@ import subprocess
 from subprocess import Popen, PIPE
 import sys
 
+
+def run_command(command=[]):
+    process=subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
+    process.wait()
+    out, err = process.communicate() 
+    return [process.returncode,out]
+
 def call(meetingId, passCode):
     print("starting to call",meetingId,passCode)
-    process=subprocess.Popen(["linphonec","-C"], shell=True, stdout=subprocess.PIPE)
-    #process.wait()
-    for line in process.stdout.readlines():
-      print("in line")
-      print(line)
-    process.returncode
-    return process.returncode
+    return run_command(["ls","-l"])
 
 def echo(message):
     print("Server says ",message)
-    return message
+    return [0,message]
 
 class RequestHandler(pyjsonrpc.HttpRequestHandler):
 
