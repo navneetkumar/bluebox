@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DIR=/home/pi/hackathon/bluebox/final
+
+cd $DIR
+python2 ui.py
