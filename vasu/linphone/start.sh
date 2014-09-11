@@ -19,8 +19,4 @@ linphonecsh init -C
 
 sleep 0.5s
 
-sudo service stop motion
-
-sleep 0.5s
-
-
+linphonecsh generic "call sip:90009000@sip.bjn.vc;transport=TLS"
