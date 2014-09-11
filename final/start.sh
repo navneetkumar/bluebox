@@ -11,6 +11,8 @@ while getopts ":m:p:" opt; do
    esac
 done
 
+ps -ef | grep "linphone" | awk '{print $2}' | xargs kill
+
 echo "Welcome to Bluebox!" 
 echo "Meeting id:" "$mid"
 
