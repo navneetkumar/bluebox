@@ -1,0 +1,33 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+import pyjsonrpc
+
+serverAddress="0.0.0.0"
+serverPort=8090
+
+def add(a, b):
+    """Test function"""
+    return a + b
+
+def handshake(auth):
+    print("sleeping ")
+    print (auth)
+    
+class RequestHandler(pyjsonrpc.HttpRequestHandler):
+    # Register public JSON-RPC methods
+    methods = {
+        "add": add,
+        "handshake": handshake
+    }
+
+# Threading HTTP-Server
+def serverStart():
+    http_server = pyjsonrpc.ThreadingHttpServer(server_address = (serverAddress, serverPort),RequestHandlerClass = RequestHandler)
+    print("Starting HTTP server ...")
+    print("URL: http://"),serverAddress,(":"),serverPort
+    http_server.serve_forever()
+
+if __name__=='__main__':
+	serverStart()
+
