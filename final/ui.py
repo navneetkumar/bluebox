@@ -32,10 +32,15 @@ class HelloWorld:
         self.window.maximize()
 
     def addButton(self):
-        self.button = gtk.Button("Enter BlueJeans")
-        self.button.connect("clicked", self.continued, None)
-        self.window.add(self.button)
-        self.button.show()
+        self.image = gtk.Image()
+        self.image.set_from_file("apple-red.png")
+        self.image.show()
+        #self.button = gtk.Button()
+        #self.button.add(self.image)
+        #self.button.show()
+        #self.button.connect("clicked", self.continued, None)
+        self.window.add(self.image)
+        #self.button.show()
 
     def addLabel(self):
         self.box1 = gtk.HBox(False, 0)
