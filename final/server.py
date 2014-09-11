@@ -36,7 +36,7 @@ class RequestHandler(pyjsonrpc.HttpRequestHandler):
 
 # Threading HTTP-Server
 http_server = pyjsonrpc.ThreadingHttpServer(
-    server_address = ('0.0.0.0', 8090),
+    server_address = ('0.0.0.0', 8080),
     RequestHandlerClass = RequestHandler
 )
 
