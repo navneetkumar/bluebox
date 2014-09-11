@@ -1,0 +1,3 @@
+feh -bg-scale /home/pi/hackathon/bluebox/final/bluebox.png &
+
+startui &
