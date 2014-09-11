@@ -21,15 +21,17 @@ def notify(message):
 
 def call(meetingId):
     print("starting to call",meetingId)
+    notify("calling meeting# " + meetingId " from bluebox...")
     return run_command(["./start.sh -m " + meetingId])
 
 def stop():
     print("stopping the call")
+    notify("terminating meeting...")
     return run_command(["./stop.sh"])
 
 def echo(message):
     print("Server says ",message)
-    notify("Welcome " + message)	
+    notify("Connected to " + message)	
     return [0,message]
 
 class RequestHandler(pyjsonrpc.HttpRequestHandler):
