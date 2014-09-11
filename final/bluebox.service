@@ -1,0 +1,9 @@
+[Unit]
+Description=BlueBox service
+
+[Service]
+ExecStart=/home/pi/hackathon/bluebox/final/start_server.sh
+# "Type=forking" or "Type=oneshot" may also be needed
+
+[Install]
+WantedBy=multi-user.target
