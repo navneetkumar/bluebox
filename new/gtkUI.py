@@ -7,8 +7,8 @@ pygtk.require('2.0')
 import gtk
 import time
 
-
-var=0
+meetingId=909090
+meetingPassCode=404
 
 class HelloWorld:
 
@@ -38,10 +38,23 @@ class HelloWorld:
         self.button.show()
 
     def addLabel(self):
-        self.label=gtk.Label()
-        self.label.set_text("Welcome to BlueJeans");
-        self.window.add(self.label)
-        self.label.show()
+        self.box1 = gtk.HBox(False, 0)
+        self.window.add(self.box1)
+        
+        self.meetingIdLabel=gtk.Label()
+        global meetingId
+        meetingIdLabel="Meeting Id :"+ str(meetingId)
+        self.meetingIdLabel.set_text(meetingIdLabel);
+        self.box1.pack_start(self.meetingIdLabel, True, True, 0)
+        self.meetingIdLabel.show()
+        
+        self.meetingPassCodeLabel=gtk.Label()
+        global meetingPassCode
+        meetingPasscodeLabel="Meeting Passcode :"+ str(meetingPassCode)
+        self.meetingPassCodeLabel.set_text(meetingPasscodeLabel);
+        self.box1.pack_start(self.meetingPassCodeLabel, True, True, 0)
+        self.meetingPassCodeLabel.show()
+        self.box1.show()
         self.window.show()
 
     def destroy(self, widget, data=None):
