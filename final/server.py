@@ -21,7 +21,7 @@ def notify(message):
 
 def call(meetingId):
     print("starting to call",meetingId)
-    notify("calling meeting# " + meetingId " from bluebox...")
+    notify("calling meeting# " + meetingId + " from bluebox...")
     return run_command(["./start.sh -m " + meetingId])
 
 def stop():
