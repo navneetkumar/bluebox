@@ -24,6 +24,16 @@ linphonecsh init -C -l linphone.log -d 6
 
 sleep 2s
 
+linphonecsh generic "soundcard list"
+linphonecsh generic "soundcard capture 3"
+linphonecsh generic "soundcard playback 2"
+linphonecsh generic "soundcard ring 2"
+
+echo "Capture Devices:"
+linphonecsh generic "soundcard show"
+
+sleep 1s
+
 str="call sip:"$mid"@sip.bjn.vc;transport=TLS"
 echo $str
 

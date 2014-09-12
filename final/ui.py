@@ -14,11 +14,11 @@ class UI:
         self.window = gtk.Window(gtk.WINDOW_TOPLEVEL)
         self.window.connect("destroy", self.destroy)
         self.window.set_decorated(False)
-        self.window.set_default_size(700, 100)
+        self.window.set_default_size(500, 70)
         color = gtk.gdk.color_parse('#3BB9FF')
       	self.window.modify_bg(gtk.STATE_NORMAL, color)
 	self.window.set_opacity(0.4)
-	self.window.move(50,350)
+	self.window.move(50,180)
 	self.window.set_border_width(50)
         self.window.set_title("BlueJeans")
 	default_msg = "Waiting for connection..."
@@ -40,7 +40,7 @@ class UI:
     
     def show(self,message):
 	self.label.set_label(message)
-	self.label.set_markup("<span color='white' size='30000'><b>%s</b></span>" % message)
+	self.label.set_markup("<span color='white' size='28000'><b>%s</b></span>" % message)
  	
     def changed(self,monitor, file1, file2, evt_type):
 	contents, length, etag = file1.load_contents()
