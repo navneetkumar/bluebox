@@ -5,7 +5,7 @@ import pyjsonrpc
 import subprocess
 from subprocess import Popen, PIPE
 import sys
-
+import time
 
 def run_command(command=[]):
     process=subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)
@@ -21,12 +21,18 @@ def notify(message):
 
 def call(meetingId):
     print("starting to call",meetingId)
-    notify("calling meeting# " + meetingId + " from bluebox...")
-    return run_command(["./start.sh -m " + meetingId])
+    notify("Calling meeting# " + meetingId + " from bluebox...")
+    output = run_command(["./start.sh -m " + meetingId])
+    notify("You are in meeting")	
+    return output
 
 def stop():
     print("stopping the call")
-    notify("terminating meeting...")
+    notify("Terminating meeting...")
+    output = run_command(["./stop.sh"])
+    notify("Call terminated")
+    time.sleep(2)
+    notify("Relax on Couch Now!!")			
     return run_command(["./stop.sh"])
 
 def echo(message):
