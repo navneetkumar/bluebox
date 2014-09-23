@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ISs-J8-Rkv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Qzt-EY-hOT">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="ISs-J8-Rkv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bD1-TK-Dr2">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cnr-lO-JUf" kind="relationship" relationship="rootViewController" id="tVK-FT-TBf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1si-nW-hRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="257"/>
+        </scene>
+        <!--Connect Meeting View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="BBConnectMeetingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Meeting" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" translatesAutoresizingMaskIntoConstraints="NO" id="ddx-k9-CGu">
+                                <rect key="frame" x="15" y="30" width="290" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="6d3-46-cuE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PXD-dT-I9K">
+                                <rect key="frame" x="5" y="72" width="310" height="46"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="wA3-Ne-qc8"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableViewCellID" id="89h-YS-1Zs" customClass="BBTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="310" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="89h-YS-1Zs" id="Nkx-hO-O7s">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjG-ax-Yxh">
+                                                    <rect key="frame" x="10" y="12" width="116" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.023529411760000001" green="0.31764705879999999" blue="0.49803921569999998" alpha="1" colorSpace="deviceRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="required" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xx-es-rOP">
+                                                    <rect key="frame" x="134" y="8" width="166" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="inputTextField" destination="6xx-es-rOP" id="dnr-Uv-jEJ"/>
+                                            <outlet property="titleLabel" destination="HjG-ax-Yxh" id="Kgj-Yh-Mwu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="nmg-dt-qqT"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="BO5-tm-NiF"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2j-TU-EZ3" userLabel="EventJoinButton">
+                                <rect key="frame" x="15" y="158" width="290" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18211611359999999" green="0.47800426340000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Bwc-sc-g99"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <state key="normal" title="Enter Meeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="connectToMeeting:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Bo8-cF-0hz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnn-UR-sch" userLabel="EventJoinButton">
+                                <rect key="frame" x="15" y="225" width="290" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.031372549019607843" green="0.53725490196078429" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oGx-Fe-xFy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <state key="normal" title="Play Video">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playSampleVidep:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ERg-Bb-nf6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PXD-dT-I9K" firstAttribute="top" secondItem="ddx-k9-CGu" secondAttribute="bottom" constant="20" id="8xH-rz-kaV"/>
+                            <constraint firstItem="tnn-UR-sch" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="FRx-1h-Dal"/>
+                            <constraint firstAttribute="trailing" secondItem="D2j-TU-EZ3" secondAttribute="trailing" constant="15" id="FjM-ha-Roh"/>
+                            <constraint firstAttribute="trailing" secondItem="PXD-dT-I9K" secondAttribute="trailing" constant="5" id="ObI-H6-Mkq"/>
+                            <constraint firstAttribute="trailing" secondItem="tnn-UR-sch" secondAttribute="trailing" constant="15" id="RwI-d3-ZeY"/>
+                            <constraint firstItem="D2j-TU-EZ3" firstAttribute="top" secondItem="PXD-dT-I9K" secondAttribute="bottom" constant="40" id="Saf-Bu-ccG"/>
+                            <constraint firstItem="D2j-TU-EZ3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="e74-iV-OCT"/>
+                            <constraint firstItem="ddx-k9-CGu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="15" id="gvx-VN-akh"/>
+                            <constraint firstAttribute="trailing" secondItem="ddx-k9-CGu" secondAttribute="trailing" constant="15" id="iw7-oh-bMl"/>
+                            <constraint firstItem="tnn-UR-sch" firstAttribute="top" secondItem="D2j-TU-EZ3" secondAttribute="bottom" constant="23" id="lCT-Gb-mPl"/>
+                            <constraint firstItem="ddx-k9-CGu" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="sK2-Ve-N2G"/>
+                            <constraint firstItem="PXD-dT-I9K" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="5" id="vXX-7w-FWm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Swp-FN-Zt7"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="meetingTableView" destination="PXD-dT-I9K" id="Laz-3c-cf1"/>
+                        <segue destination="IMB-5B-DX2" kind="push" identifier="inMeetingSegue" id="ugf-di-BvO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="257"/>
+        </scene>
+        <!--In Meeting View Controller-->
+        <scene sceneID="M7e-L2-7Y0">
+            <objects>
+                <viewController storyboardIdentifier="BBInMeetingViewController" id="IMB-5B-DX2" customClass="BBInMeetingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ShM-t0-LUu"/>
+                        <viewControllerLayoutGuide type="bottom" id="wY9-Up-ncO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2fC-qS-ytM">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXA-cz-pLU" userLabel="EventJoinButton">
+                                <rect key="frame" x="20" y="286" width="290" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.2367794352960062" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3Ge-Av-Q0x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
+                                <state key="normal" title="Hang up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hangup:" destination="IMB-5B-DX2" eventType="touchUpInside" id="lgn-XH-gEA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are in the meeting !!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIF-9E-gOi">
+                                <rect key="frame" x="20" y="55" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GuH-VF-hVM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uIF-9E-gOi" firstAttribute="leading" secondItem="2fC-qS-ytM" secondAttribute="leading" constant="20" id="5hV-JJ-m4g"/>
+                            <constraint firstItem="uIF-9E-gOi" firstAttribute="top" secondItem="ShM-t0-LUu" secondAttribute="bottom" constant="55" id="UaS-QZ-LSB"/>
+                            <constraint firstAttribute="trailing" secondItem="uIF-9E-gOi" secondAttribute="trailing" constant="20" id="ZIe-ex-dwy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1jx-dV-whd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6z7-mc-Cf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="257"/>
+        </scene>
+        <!--View Controller - BlueBox-->
+        <scene sceneID="8SR-HC-e2v">
+            <objects>
+                <viewController title="BlueBox" id="cnr-lO-JUf" customClass="BBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SJu-br-3Kr"/>
+                        <viewControllerLayoutGuide type="bottom" id="bR7-Vz-I8h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ske-j6-zaF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bluebox.png" translatesAutoresizingMaskIntoConstraints="NO" id="cr3-80-Zwv">
+                                <rect key="frame" x="31" y="122" width="259" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Searching for BlueBox..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="EIB-of-h46">
+                                <rect key="frame" x="31" y="354" width="269" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.22171260533707871" green="0.22171260533707871" blue="0.22171260533707871" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="activity-indicator-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="GIk-8k-iCX">
+                                <rect key="frame" x="143" y="294" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kia-DL-S9v"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicatorImageView" destination="GIk-8k-iCX" id="ncN-gd-Zcu"/>
+                        <outlet property="blueBoxStatusLabel" destination="EIB-of-h46" id="Aop-EY-89G"/>
+                        <segue destination="vXZ-lx-hvc" kind="push" identifier="connectToMeeting" id="egQ-zU-y4I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8E-TA-m3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="257"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="activity-indicator-1.png" width="35" height="35"/>
+        <image name="bluebox.png" width="518" height="150"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

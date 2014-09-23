@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		642926F419C05F7A0089F33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642926F319C05F7A0089F33D /* Foundation.framework */; };
+		642926F619C05F7A0089F33D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642926F519C05F7A0089F33D /* CoreGraphics.framework */; };
+		642926F819C05F7A0089F33D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642926F719C05F7A0089F33D /* UIKit.framework */; };
+		642926FE19C05F7A0089F33D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 642926FC19C05F7A0089F33D /* InfoPlist.strings */; };
+		6429270019C05F7A0089F33D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 642926FF19C05F7A0089F33D /* main.m */; };
+		6429270419C05F7A0089F33D /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6429270319C05F7A0089F33D /* BBAppDelegate.m */; };
+		6429270719C05F7A0089F33D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6429270519C05F7A0089F33D /* Main_iPhone.storyboard */; };
+		6429270A19C05F7A0089F33D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6429270819C05F7A0089F33D /* Main_iPad.storyboard */; };
+		6429270F19C05F7A0089F33D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6429270E19C05F7A0089F33D /* Images.xcassets */; };
+		6429271619C05F7A0089F33D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6429271519C05F7A0089F33D /* XCTest.framework */; };
+		6429271719C05F7A0089F33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642926F319C05F7A0089F33D /* Foundation.framework */; };
+		6429271819C05F7A0089F33D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642926F719C05F7A0089F33D /* UIKit.framework */; };
+		6429272019C05F7A0089F33D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6429271E19C05F7A0089F33D /* InfoPlist.strings */; };
+		6429272219C05F7A0089F33D /* BlueBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6429272119C05F7A0089F33D /* BlueBoxTests.m */; };
+		648D724419C0997700AD296E /* BBDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D724319C0997700AD296E /* BBDevice.m */; };
+		648D724819C0AE8A00AD296E /* UIView+ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D724719C0AE8A00AD296E /* UIView+ProgressHUD.m */; };
+		648D724D19C0B13A00AD296E /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D724C19C0B13A00AD296E /* UIAlertView+MKBlockAdditions.m */; };
+		648D725119C1F6B500AD296E /* bluebox.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725019C1F6B500AD296E /* bluebox.png */; };
+		648D725F19C1FBE500AD296E /* activity-indicator-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725319C1FBE500AD296E /* activity-indicator-1.png */; };
+		648D726019C1FBE500AD296E /* activity-indicator-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725419C1FBE500AD296E /* activity-indicator-1@2x.png */; };
+		648D726119C1FBE500AD296E /* activity-indicator-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725519C1FBE500AD296E /* activity-indicator-2.png */; };
+		648D726219C1FBE500AD296E /* activity-indicator-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725619C1FBE500AD296E /* activity-indicator-2@2x.png */; };
+		648D726319C1FBE500AD296E /* activity-indicator-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725719C1FBE500AD296E /* activity-indicator-3.png */; };
+		648D726419C1FBE500AD296E /* activity-indicator-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725819C1FBE500AD296E /* activity-indicator-3@2x.png */; };
+		648D726519C1FBE500AD296E /* activity-indicator-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725919C1FBE500AD296E /* activity-indicator-4.png */; };
+		648D726619C1FBE500AD296E /* activity-indicator-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725A19C1FBE500AD296E /* activity-indicator-4@2x.png */; };
+		648D726719C1FBE500AD296E /* activity-indicator-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725B19C1FBE500AD296E /* activity-indicator-5.png */; };
+		648D726819C1FBE500AD296E /* activity-indicator-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725C19C1FBE500AD296E /* activity-indicator-5@2x.png */; };
+		648D726919C1FBE500AD296E /* activity-indicator-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725D19C1FBE500AD296E /* activity-indicator-6.png */; };
+		648D726A19C1FBE500AD296E /* activity-indicator-6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 648D725E19C1FBE500AD296E /* activity-indicator-6@2x.png */; };
+		648D726E19C20AE900AD296E /* BBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D726D19C20AE900AD296E /* BBTableViewCell.m */; };
+		648D727219C20E5700AD296E /* BBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D727119C20E5700AD296E /* BBViewController.m */; };
+		648D727519C20E7400AD296E /* BBConnectMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D727419C20E7400AD296E /* BBConnectMeetingViewController.m */; };
+		648D727A19C21B1000AD296E /* BBDeviceCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D727919C21B1000AD296E /* BBDeviceCommunicator.m */; };
+		648D727D19C2346C00AD296E /* BBInMeetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648D727C19C2346C00AD296E /* BBInMeetingViewController.m */; };
+		BAF637340B8B4761B9D7F992 /* libPods-BlueBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F1A483F60E4F3E9F602807 /* libPods-BlueBox.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6429271919C05F7A0089F33D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 642926E819C05F7A0089F33D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 642926EF19C05F7A0089F33D;
+			remoteInfo = BlueBox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		642926F019C05F7A0089F33D /* BlueBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		642926F319C05F7A0089F33D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		642926F519C05F7A0089F33D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		642926F719C05F7A0089F33D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		642926FB19C05F7A0089F33D /* BlueBox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueBox-Info.plist"; sourceTree = "<group>"; };
+		642926FD19C05F7A0089F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		642926FF19C05F7A0089F33D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6429270119C05F7A0089F33D /* BlueBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueBox-Prefix.pch"; sourceTree = "<group>"; };
+		6429270219C05F7A0089F33D /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		6429270319C05F7A0089F33D /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
+		6429270619C05F7A0089F33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		6429270919C05F7A0089F33D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6429270E19C05F7A0089F33D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6429271419C05F7A0089F33D /* BlueBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6429271519C05F7A0089F33D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6429271D19C05F7A0089F33D /* BlueBoxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueBoxTests-Info.plist"; sourceTree = "<group>"; };
+		6429271F19C05F7A0089F33D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6429272119C05F7A0089F33D /* BlueBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueBoxTests.m; sourceTree = "<group>"; };
+		648D724219C0997700AD296E /* BBDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDevice.h; sourceTree = "<group>"; };
+		648D724319C0997700AD296E /* BBDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDevice.m; sourceTree = "<group>"; };
+		648D724619C0AE8A00AD296E /* UIView+ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ProgressHUD.h"; sourceTree = "<group>"; };
+		648D724719C0AE8A00AD296E /* UIView+ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ProgressHUD.m"; sourceTree = "<group>"; };
+		648D724A19C0B13A00AD296E /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
+		648D724B19C0B13A00AD296E /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		648D724C19C0B13A00AD296E /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		648D725019C1F6B500AD296E /* bluebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebox.png; sourceTree = "<group>"; };
+		648D725319C1FBE500AD296E /* activity-indicator-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-1.png"; sourceTree = "<group>"; };
+		648D725419C1FBE500AD296E /* activity-indicator-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-1@2x.png"; sourceTree = "<group>"; };
+		648D725519C1FBE500AD296E /* activity-indicator-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-2.png"; sourceTree = "<group>"; };
+		648D725619C1FBE500AD296E /* activity-indicator-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-2@2x.png"; sourceTree = "<group>"; };
+		648D725719C1FBE500AD296E /* activity-indicator-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-3.png"; sourceTree = "<group>"; };
+		648D725819C1FBE500AD296E /* activity-indicator-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-3@2x.png"; sourceTree = "<group>"; };
+		648D725919C1FBE500AD296E /* activity-indicator-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-4.png"; sourceTree = "<group>"; };
+		648D725A19C1FBE500AD296E /* activity-indicator-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-4@2x.png"; sourceTree = "<group>"; };
+		648D725B19C1FBE500AD296E /* activity-indicator-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-5.png"; sourceTree = "<group>"; };
+		648D725C19C1FBE500AD296E /* activity-indicator-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-5@2x.png"; sourceTree = "<group>"; };
+		648D725D19C1FBE500AD296E /* activity-indicator-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-6.png"; sourceTree = "<group>"; };
+		648D725E19C1FBE500AD296E /* activity-indicator-6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "activity-indicator-6@2x.png"; sourceTree = "<group>"; };
+		648D726C19C20AE900AD296E /* BBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTableViewCell.h; sourceTree = "<group>"; };
+		648D726D19C20AE900AD296E /* BBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTableViewCell.m; sourceTree = "<group>"; };
+		648D727019C20E5700AD296E /* BBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBViewController.h; sourceTree = "<group>"; };
+		648D727119C20E5700AD296E /* BBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBViewController.m; sourceTree = "<group>"; };
+		648D727319C20E7400AD296E /* BBConnectMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBConnectMeetingViewController.h; sourceTree = "<group>"; };
+		648D727419C20E7400AD296E /* BBConnectMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBConnectMeetingViewController.m; sourceTree = "<group>"; };
+		648D727819C21B1000AD296E /* BBDeviceCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBDeviceCommunicator.h; sourceTree = "<group>"; };
+		648D727919C21B1000AD296E /* BBDeviceCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBDeviceCommunicator.m; sourceTree = "<group>"; };
+		648D727B19C2346C00AD296E /* BBInMeetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBInMeetingViewController.h; sourceTree = "<group>"; };
+		648D727C19C2346C00AD296E /* BBInMeetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBInMeetingViewController.m; sourceTree = "<group>"; };
+		B0FE241AA5C84F0DB4D8162B /* Pods-BlueBox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueBox.xcconfig"; path = "Pods/Pods-BlueBox.xcconfig"; sourceTree = "<group>"; };
+		D1F1A483F60E4F3E9F602807 /* libPods-BlueBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlueBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		642926ED19C05F7A0089F33D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				642926F619C05F7A0089F33D /* CoreGraphics.framework in Frameworks */,
+				642926F819C05F7A0089F33D /* UIKit.framework in Frameworks */,
+				642926F419C05F7A0089F33D /* Foundation.framework in Frameworks */,
+				BAF637340B8B4761B9D7F992 /* libPods-BlueBox.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6429271119C05F7A0089F33D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6429271619C05F7A0089F33D /* XCTest.framework in Frameworks */,
+				6429271819C05F7A0089F33D /* UIKit.framework in Frameworks */,
+				6429271719C05F7A0089F33D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		642926E719C05F7A0089F33D = {
+			isa = PBXGroup;
+			children = (
+				642926F919C05F7A0089F33D /* BlueBox */,
+				6429271B19C05F7A0089F33D /* BlueBoxTests */,
+				642926F219C05F7A0089F33D /* Frameworks */,
+				642926F119C05F7A0089F33D /* Products */,
+				B0FE241AA5C84F0DB4D8162B /* Pods-BlueBox.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		642926F119C05F7A0089F33D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				642926F019C05F7A0089F33D /* BlueBox.app */,
+				6429271419C05F7A0089F33D /* BlueBoxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		642926F219C05F7A0089F33D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642926F319C05F7A0089F33D /* Foundation.framework */,
+				642926F519C05F7A0089F33D /* CoreGraphics.framework */,
+				642926F719C05F7A0089F33D /* UIKit.framework */,
+				6429271519C05F7A0089F33D /* XCTest.framework */,
+				D1F1A483F60E4F3E9F602807 /* libPods-BlueBox.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		642926F919C05F7A0089F33D /* BlueBox */ = {
+			isa = PBXGroup;
+			children = (
+				6429270219C05F7A0089F33D /* BBAppDelegate.h */,
+				6429270319C05F7A0089F33D /* BBAppDelegate.m */,
+				6429270519C05F7A0089F33D /* Main_iPhone.storyboard */,
+				6429270819C05F7A0089F33D /* Main_iPad.storyboard */,
+				648D724119C0996F00AD296E /* Models */,
+				648D726F19C20E5700AD296E /* View Controllers */,
+				648D726B19C20AB300AD296E /* Components */,
+				648D724519C0AE8000AD296E /* Categories */,
+				6429270E19C05F7A0089F33D /* Images.xcassets */,
+				642926FA19C05F7A0089F33D /* Supporting Files */,
+			);
+			path = BlueBox;
+			sourceTree = "<group>";
+		};
+		642926FA19C05F7A0089F33D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				648D724E19C1F6B500AD296E /* Resources */,
+				642926FB19C05F7A0089F33D /* BlueBox-Info.plist */,
+				642926FC19C05F7A0089F33D /* InfoPlist.strings */,
+				642926FF19C05F7A0089F33D /* main.m */,
+				6429270119C05F7A0089F33D /* BlueBox-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6429271B19C05F7A0089F33D /* BlueBoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				6429272119C05F7A0089F33D /* BlueBoxTests.m */,
+				6429271C19C05F7A0089F33D /* Supporting Files */,
+			);
+			path = BlueBoxTests;
+			sourceTree = "<group>";
+		};
+		6429271C19C05F7A0089F33D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6429271D19C05F7A0089F33D /* BlueBoxTests-Info.plist */,
+				6429271E19C05F7A0089F33D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		648D724119C0996F00AD296E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				648D724219C0997700AD296E /* BBDevice.h */,
+				648D724319C0997700AD296E /* BBDevice.m */,
+				648D727819C21B1000AD296E /* BBDeviceCommunicator.h */,
+				648D727919C21B1000AD296E /* BBDeviceCommunicator.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		648D724519C0AE8000AD296E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				648D724619C0AE8A00AD296E /* UIView+ProgressHUD.h */,
+				648D724719C0AE8A00AD296E /* UIView+ProgressHUD.m */,
+				648D724919C0B13A00AD296E /* UIAlertView Additions */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		648D724919C0B13A00AD296E /* UIAlertView Additions */ = {
+			isa = PBXGroup;
+			children = (
+				648D724A19C0B13A00AD296E /* MKBlockAdditions.h */,
+				648D724B19C0B13A00AD296E /* UIAlertView+MKBlockAdditions.h */,
+				648D724C19C0B13A00AD296E /* UIAlertView+MKBlockAdditions.m */,
+			);
+			path = "UIAlertView Additions";
+			sourceTree = "<group>";
+		};
+		648D724E19C1F6B500AD296E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				648D724F19C1F6B500AD296E /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		648D724F19C1F6B500AD296E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				648D725019C1F6B500AD296E /* bluebox.png */,
+				648D725219C1FA3300AD296E /* Activity Indicator */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		648D725219C1FA3300AD296E /* Activity Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				648D725319C1FBE500AD296E /* activity-indicator-1.png */,
+				648D725419C1FBE500AD296E /* activity-indicator-1@2x.png */,
+				648D725519C1FBE500AD296E /* activity-indicator-2.png */,
+				648D725619C1FBE500AD296E /* activity-indicator-2@2x.png */,
+				648D725719C1FBE500AD296E /* activity-indicator-3.png */,
+				648D725819C1FBE500AD296E /* activity-indicator-3@2x.png */,
+				648D725919C1FBE500AD296E /* activity-indicator-4.png */,
+				648D725A19C1FBE500AD296E /* activity-indicator-4@2x.png */,
+				648D725B19C1FBE500AD296E /* activity-indicator-5.png */,
+				648D725C19C1FBE500AD296E /* activity-indicator-5@2x.png */,
+				648D725D19C1FBE500AD296E /* activity-indicator-6.png */,
+				648D725E19C1FBE500AD296E /* activity-indicator-6@2x.png */,
+			);
+			path = "Activity Indicator";
+			sourceTree = "<group>";
+		};
+		648D726B19C20AB300AD296E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				648D726C19C20AE900AD296E /* BBTableViewCell.h */,
+				648D726D19C20AE900AD296E /* BBTableViewCell.m */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		648D726F19C20E5700AD296E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				648D727019C20E5700AD296E /* BBViewController.h */,
+				648D727119C20E5700AD296E /* BBViewController.m */,
+				648D727319C20E7400AD296E /* BBConnectMeetingViewController.h */,
+				648D727419C20E7400AD296E /* BBConnectMeetingViewController.m */,
+				648D727B19C2346C00AD296E /* BBInMeetingViewController.h */,
+				648D727C19C2346C00AD296E /* BBInMeetingViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		642926EF19C05F7A0089F33D /* BlueBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6429272519C05F7A0089F33D /* Build configuration list for PBXNativeTarget "BlueBox" */;
+			buildPhases = (
+				6974771CB66D481DB02427E9 /* Check Pods Manifest.lock */,
+				642926EC19C05F7A0089F33D /* Sources */,
+				642926ED19C05F7A0089F33D /* Frameworks */,
+				642926EE19C05F7A0089F33D /* Resources */,
+				B5502A175B08432989B0C717 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueBox;
+			productName = BlueBox;
+			productReference = 642926F019C05F7A0089F33D /* BlueBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6429271319C05F7A0089F33D /* BlueBoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6429272819C05F7A0089F33D /* Build configuration list for PBXNativeTarget "BlueBoxTests" */;
+			buildPhases = (
+				6429271019C05F7A0089F33D /* Sources */,
+				6429271119C05F7A0089F33D /* Frameworks */,
+				6429271219C05F7A0089F33D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6429271A19C05F7A0089F33D /* PBXTargetDependency */,
+			);
+			name = BlueBoxTests;
+			productName = BlueBoxTests;
+			productReference = 6429271419C05F7A0089F33D /* BlueBoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		642926E819C05F7A0089F33D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = BlueJeans;
+				TargetAttributes = {
+					6429271319C05F7A0089F33D = {
+						TestTargetID = 642926EF19C05F7A0089F33D;
+					};
+				};
+			};
+			buildConfigurationList = 642926EB19C05F7A0089F33D /* Build configuration list for PBXProject "BlueBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 642926E719C05F7A0089F33D;
+			productRefGroup = 642926F119C05F7A0089F33D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				642926EF19C05F7A0089F33D /* BlueBox */,
+				6429271319C05F7A0089F33D /* BlueBoxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		642926EE19C05F7A0089F33D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6429270A19C05F7A0089F33D /* Main_iPad.storyboard in Resources */,
+				648D726119C1FBE500AD296E /* activity-indicator-2.png in Resources */,
+				648D726719C1FBE500AD296E /* activity-indicator-5.png in Resources */,
+				648D726219C1FBE500AD296E /* activity-indicator-2@2x.png in Resources */,
+				6429270F19C05F7A0089F33D /* Images.xcassets in Resources */,
+				648D726919C1FBE500AD296E /* activity-indicator-6.png in Resources */,
+				648D726319C1FBE500AD296E /* activity-indicator-3.png in Resources */,
+				648D726619C1FBE500AD296E /* activity-indicator-4@2x.png in Resources */,
+				648D725F19C1FBE500AD296E /* activity-indicator-1.png in Resources */,
+				648D726019C1FBE500AD296E /* activity-indicator-1@2x.png in Resources */,
+				6429270719C05F7A0089F33D /* Main_iPhone.storyboard in Resources */,
+				642926FE19C05F7A0089F33D /* InfoPlist.strings in Resources */,
+				648D726A19C1FBE500AD296E /* activity-indicator-6@2x.png in Resources */,
+				648D726819C1FBE500AD296E /* activity-indicator-5@2x.png in Resources */,
+				648D725119C1F6B500AD296E /* bluebox.png in Resources */,
+				648D726419C1FBE500AD296E /* activity-indicator-3@2x.png in Resources */,
+				648D726519C1FBE500AD296E /* activity-indicator-4.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6429271219C05F7A0089F33D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6429272019C05F7A0089F33D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6974771CB66D481DB02427E9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5502A175B08432989B0C717 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BlueBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		642926EC19C05F7A0089F33D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648D727A19C21B1000AD296E /* BBDeviceCommunicator.m in Sources */,
+				648D727219C20E5700AD296E /* BBViewController.m in Sources */,
+				648D724819C0AE8A00AD296E /* UIView+ProgressHUD.m in Sources */,
+				648D727519C20E7400AD296E /* BBConnectMeetingViewController.m in Sources */,
+				648D724419C0997700AD296E /* BBDevice.m in Sources */,
+				6429270419C05F7A0089F33D /* BBAppDelegate.m in Sources */,
+				6429270019C05F7A0089F33D /* main.m in Sources */,
+				648D727D19C2346C00AD296E /* BBInMeetingViewController.m in Sources */,
+				648D726E19C20AE900AD296E /* BBTableViewCell.m in Sources */,
+				648D724D19C0B13A00AD296E /* UIAlertView+MKBlockAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6429271019C05F7A0089F33D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6429272219C05F7A0089F33D /* BlueBoxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6429271A19C05F7A0089F33D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 642926EF19C05F7A0089F33D /* BlueBox */;
+			targetProxy = 6429271919C05F7A0089F33D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		642926FC19C05F7A0089F33D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				642926FD19C05F7A0089F33D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6429270519C05F7A0089F33D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6429270619C05F7A0089F33D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		6429270819C05F7A0089F33D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6429270919C05F7A0089F33D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		6429271E19C05F7A0089F33D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6429271F19C05F7A0089F33D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6429272319C05F7A0089F33D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6429272419C05F7A0089F33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6429272619C05F7A0089F33D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FE241AA5C84F0DB4D8162B /* Pods-BlueBox.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueBox/BlueBox-Prefix.pch";
+				INFOPLIST_FILE = "BlueBox/BlueBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6429272719C05F7A0089F33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FE241AA5C84F0DB4D8162B /* Pods-BlueBox.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueBox/BlueBox-Prefix.pch";
+				INFOPLIST_FILE = "BlueBox/BlueBox-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6429272919C05F7A0089F33D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueBox.app/BlueBox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueBox/BlueBox-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlueBoxTests/BlueBoxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6429272A19C05F7A0089F33D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueBox.app/BlueBox";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueBox/BlueBox-Prefix.pch";
+				INFOPLIST_FILE = "BlueBoxTests/BlueBoxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		642926EB19C05F7A0089F33D /* Build configuration list for PBXProject "BlueBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6429272319C05F7A0089F33D /* Debug */,
+				6429272419C05F7A0089F33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6429272519C05F7A0089F33D /* Build configuration list for PBXNativeTarget "BlueBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6429272619C05F7A0089F33D /* Debug */,
+				6429272719C05F7A0089F33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6429272819C05F7A0089F33D /* Build configuration list for PBXNativeTarget "BlueBoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6429272919C05F7A0089F33D /* Debug */,
+				6429272A19C05F7A0089F33D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 642926E819C05F7A0089F33D /* Project object */;
+}
